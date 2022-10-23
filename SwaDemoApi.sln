@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaDemoApi", "src\SwaDemoAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaDemoApi.Client", "src\SwaDemoApi.Client\SwaDemoApi.Client.csproj", "{2C5700A5-791B-404E-AC59-2FAF5EE6A0BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaDemoApi.Models", "src\SwaDemoApi.Models\SwaDemoApi.Models.csproj", "{FB672C43-FA61-4178-97B6-C89135816321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaDemoApi.Models", "src\SwaDemoApi.Models\SwaDemoApi.Models.csproj", "{FB672C43-FA61-4178-97B6-C89135816321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaDemoApi.Core", "src\SwaDemoApi.Core\SwaDemoApi.Core.csproj", "{23E22BA1-3A90-49C8-8D3D-DBD1883836CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaDemoApi.Core", "src\SwaDemoApi.Core\SwaDemoApi.Core.csproj", "{23E22BA1-3A90-49C8-8D3D-DBD1883836CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

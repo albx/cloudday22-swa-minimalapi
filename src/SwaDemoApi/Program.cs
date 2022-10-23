@@ -15,16 +15,6 @@ builder.Services
     .AddScoped<AgendaDataManager>()
     .AddScoped<AgendaServices>();
 
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader();
-    });
-});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,8 +25,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseCors();
 
 app.MapGet("/api/agenda", (AgendaServices services) => AgendaEndpoints.GetAgenda(services)).WithName("Agenda");
 app.MapGet("/api/talk/{id}", (Guid id, AgendaServices services) => TalkEndpoints.GetTalkDetail(id, services)).WithName("TalkDetail");

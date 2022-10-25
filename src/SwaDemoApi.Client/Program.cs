@@ -10,7 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddStaticWebAppsAuthentication();
 
-builder.Services.AddHttpClient<IAgendaClient, AgendaHttpClient>(client => client.BaseAddress = new Uri("https://localhost:7158"));
+builder.Services.AddHttpClient<IAgendaClient, AgendaHttpClient>(client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
